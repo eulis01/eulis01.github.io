@@ -1,11 +1,11 @@
 # Site settings
-author: Eulis Bonifacio
-title: 
+author: Eulis
+title: Welcome To Learn With Eulis
 header-img: img/home-bg.png
 email: eulis01@gmail.com
-copyright_name: Eulis Bonifacio
+copyright_name: Eulis
 description: > # this means to ignore newlines until "baseurl:"
-  
+  😃Let Help Each Other Out 😃
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: Eulis01
 github_username:  eulis01
