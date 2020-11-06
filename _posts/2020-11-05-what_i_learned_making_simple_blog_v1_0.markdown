@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "What I Learned Making Simple Blog V1.0!"
-date:       2020-11-06 03:46:36 +0000
+date:       2020-11-05 22:46:37 -0500
 permalink:  what_i_learned_making_simple_blog_v1_0
 ---
 
@@ -9,7 +9,7 @@ permalink:  what_i_learned_making_simple_blog_v1_0
  So, I Completed my Flatiron Sinatra Project WebApp For Module # 2.  and I got to said this was a interesting and Fun Experience.  So I started to plan out My Project structure and Idea by making a diagram where a  `User has_many :post & has_secured_password`  and a `Post belongs_to :user`.
 
 
-During the Learn Lesson we are Introduced to this awesome gem **[Corneal](https://github.com/thebrianemory/corneal)** Made by a Flatiron Alumni. This Awesome gem allow us to run `$ corneal new app_name` on the terminal. and this will generate a complete Project structure with the controller,models, views and many more files to  get us started quicker. Also we use the gem called [Shotgun](https://github.com/rtomayko/shotgun) to start up the server and run the app running `$ shotgun`. For some reason i had and issue where the flash message of the gem rack-flash would not show up or load i made a blog post about this issue [HERE!!](https://eulis01.github.io/stuck_debbugging_shotgun). To get around it i just run the thin server manually  with `$ bundle exec thin start --debug` here we are executing the thin web server with the —debug optional params so we get errors to show up on the terminal. Server is up and my Flash and the views are working . 
+During the Learn Lesson we are Introduced to this awesome gem **[Corneal](https://github.com/thebrianemory/corneal)** Made by a Flatiron Alumni. This Awesome gem allow us to run `$ corneal new app_name` on the terminal. and this will generate a complete Project structure with the controller,models, views and many more files to  get us started quicker. Also we use the gem called [Shotgun](https://github.com/rtomayko/shotgun) to start up the server and run the app running `$ shotgun`. For some reason I had and issue where the flash message of the gem rack-flash would not show up or load I made a blog post about this issue [HERE!!](https://eulis01.github.io/stuck_debbugging_shotgun). To get around it I just run the thin server manually  with `$ bundle exec thin start --debug` here we are executing the thin web server with the —debug optional params so we get errors to show up on the terminal. Server is up and my Flash and the views are working . 
 
 ## Protecting the users data?
 
@@ -49,7 +49,7 @@ There are a few Requirement that need to be meet a few below:
 
 `else`
 
-If any error logging in flash would say the message and redirect_if_not_logged_in is a helper method i have in my controller that redirect to the /login route.
+If any error logging in flash would say the message and redirect_if_not_logged_in is a helper method I have in my controller that redirect to the /login route.
 
 `flash[:error] = "Invalid Email or Password."`
 
@@ -59,7 +59,7 @@ If any error logging in flash would say the message and redirect_if_not_logged_i
 
 `end`
 
-There is a Lot more code i can go over with about how to secure a post data and all that which is similar  to This but let Talk about a  few ruby worlds.
+There is a Lot more code I can go over with about how to secure a post data and all that which is similar  to This but let Talk about a  few ruby Key worlds.
 
 - **MVC** **⇒** Model, View & Controller this how the project files are organized or structured.
 
@@ -72,4 +72,4 @@ There is a Lot more code i can go over with about how to secure a post data and 
 -** Rest ⇒** Representational state transfer (REST) is a software architectural style that defines a set of constraints to be used for creating Web services.
 - Params ⇒ Takes user Input from hash [:] and create a new objects from the app controllers files using an HTTP request.
 
-There Are Many More Methods we Learned and Lot more User Logic i can go over but that would be too much If you would like to check out my project click [🌞](https://github.com/eulis01/simple_blog_1) the sun to check out my GitHub Repository for this project, if you Received some value from this or this helped you in any way shape or form don't hesitate to shoot me a tweet.  Twitter should be Linked on the Footer of the page as well to  My Github profile If you would like to follow me or contact me thanks for reading this far. 🙌 You're Awesome Much love From EB.
+There Are Many More Methods we Learned and Lot more User Logic I can go over but that would be too much If you would like to check out my project click [🌞](https://github.com/eulis01/simple_blog_1) the sun to check out my GitHub Repository for this project, if you Received some value from this or this helped you in any way shape or form don't hesitate to shoot me a tweet.  Twitter should be Linked on the Footer of the page as well to  My Github profile If you would like to follow me or contact me thanks for reading this far. 🙌 You're Awesome Much love From EB .
