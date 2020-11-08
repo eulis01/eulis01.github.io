@@ -14,24 +14,27 @@ During the Learn Lesson we are Introduced to this awesome gem **[Corneal](https:
 
 There are a few Requirement that need to be meet a few below:
 
-- User must have an Account, and are able to Login, Logout & Signup.✅
-- Once logged in, a user must have the ability to create, read, update and destroy the resource that belongs_to the user Currently logged in.✅
-- Users can only edit resources that belong to him not any other users.✅
-- Validate user input so bad data cannot be persisted to the database.✅
-- Bonus: Display errors to user I used Sinatra-flash gem. ✅
+* User must have an Account, and are able to Login, Logout & Signup.✅
+* Once logged in, a user must have the ability to create, read, update and destroy the resource that belongs_to the user Currently logged in.✅
+* Users can only edit resources that belong to him not any other users.✅
+* Validate user input so bad data cannot be persisted to the database.✅
+* Bonus: Display errors to user I used Sinatra-flash gem. ✅
 
 ### User signup and login route authentication
 
-—This is the /login route for the users
+*This is the /login route for the users
 
+```
 'get "/login" do'
 
 'erb :"/users/login"'
 
 'end'
+```
 
-—This is the Post Route for the User Login, first we find the user by email and assign the user to the instance variable of '@user' and if this user password authenticate to be the same as the hash stored password in the db the user would be logged in and and the cookies sessions id would be set the same as the @['user.id'](http://user.id) and a flash message would welcome the user to the profile page.
+This is the Post Route for the User Login, first we find the user by email and assign the user to the instance variable of '@user' and if this user password authenticate to be the same as the hash stored password in the db the user would be logged in and and the cookies sessions id would be set the same as the @['user.id'](http://user.id) and a flash message would welcome the user to the profile page.
 
+```
 'post "/login" do'
 
 '@user = User.find_by(email: params[:email])'
@@ -57,18 +60,18 @@ If any error logging in flash would say the message and redirect_if_not_logged_i
 'end'
 
 'end'
-
+```
 There is a Lot more code I can go over with about how to secure a post data and all that which is similar to This but let Talk about a few ruby Key worlds.
 
-- **MVC** **⇒** Model, View & Controller this how the project files are organized or structured.
+* **MVC** **⇒** Model, View & Controller this how the project files are organized or structured.
 
-— **The Models** **⇒** This is where we find some Logic of the App and set the session and routes all written in Ruby with Sinatra and ActiveRecord.
+* **The Models** **⇒** This is where we find some Logic of the App and set the session and routes all written in Ruby with Sinatra and ActiveRecord.
 
-— **The Views** **⇒** this is where the data from the user and the app connect together, basically we write HTML code embed into ruby logic or the other way around. We can also write CSS. This Files are Called ERB ⇒ Embedded Ruby.
+*  **The Views** **⇒** this is where the data from the user and the app connect together, basically we write HTML code embed into ruby logic or the other way around. We can also write CSS. This Files are Called ERB ⇒ Embedded Ruby.
 
-— **The Controllers** ⇒ Pretty much all the Logic and hidden magic. Written in ruby, and we can make many routes and set up how we receive a user input and validate that data and store it to the database. In other words than a user request and get the view file or ERB file for that specific view the user want and show that to the user to see.
+*  **The Controllers** ⇒ Pretty much all the Logic and hidden magic. Written in ruby, and we can make many routes and set up how we receive a user input and validate that data and store it to the database. In other words than a user request and get the view file or ERB file for that specific view the user want and show that to the user to see.
 
-—** Rest ⇒** Representational state transfer (REST) is a software architectural style that defines a set of constraints to be used for creating Web services.
+* ** Rest ⇒** Representational state transfer (REST) is a software architectural style that defines a set of constraints to be used for creating Web services.
 — Params ⇒ Takes user input from hash [:] and create a new object from the app controllers files using an HTTP request.
 
 There Are Many More Methods we Learned and a Lot more User Logic I can go over but that would be too much If you would like to check out my project click [🌞](https://github.com/eulis01/simple_blog_1) the sun to check out my GitHub Repository for this project, if you received some value from this or this helped you in any way shape or form don't hesitate to shoot me a tweet. Twitter should be Linked on the Footer of the page as well as My GitHub profile If you would like to follow me or contact me thanks for reading this far. 🙌 Your Awesome Much love From EB.
