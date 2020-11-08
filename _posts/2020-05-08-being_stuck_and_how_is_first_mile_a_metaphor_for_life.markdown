@@ -6,9 +6,11 @@ permalink:  being_stuck_and_how_is_first_mile_a_metaphor_for_life
 ---
 
 
-'''ArgumentError:
+```
+ArgumentError:
 wrong number of arguments (given 1, expected 0)
-'''
+```
+
 
 Hello everyone I know we’ll have reached a point where we feel lost, and not understanding what to do better to say being stuck. I have ruled myself to limit the time I spend doing research. How do I get unstuck? Personally I start by researching what I am trying to do for example how to add a ruby document or return an instance of the class. Looking up the error code and reading the ruby docs to learn new methods and operator to use on my code I would try to solve the problem out within 30 minutes. Stills nothing take a 10-minute break and give it another 5 minutes.
 
