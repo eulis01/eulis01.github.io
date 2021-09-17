@@ -2,11 +2,11 @@
     "name": "clean-blog",
     "title": "Clean Blog",
     "version": "1.0.0",
-    "homepage": "http://startbootstrap.com",
+    "homepage": "https://startbootstrap.com",
     "author": "Start Bootstrap",
     "license": {
-        "type": "Apache 2.0",
-        "url": "https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE"
+        "type": "MIT License",
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/blob/master/LICENSE"
     },
     "devDependencies": {
         "grunt": "^1.4.1",
@@ -17,6 +17,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll"
     }
 }
